@@ -1,0 +1,40 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/CEO/Desktop/smart-app-ruby/spec/custom_exceptions_spec.rb": {
+        "lines": [
+          1,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/CEO/Desktop/smart-app-ruby/spec/log_parser_spec.rb": {
+        "lines": [
+          1,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1594975319
+  }
+}
