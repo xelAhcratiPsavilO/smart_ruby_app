@@ -8,6 +8,7 @@ class LogParser
   private
 
   def handle(log)
+    raise FileLocationError unless File.exist?(log)
     raise FileExtensionError unless %w[.log].include? File.extname(log)
   end
 end
