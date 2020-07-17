@@ -65,4 +65,16 @@ describe LogParser do
       end
     end
   end
+
+  describe '#print_logs' do
+    context 'when the logs are stored' do
+      let(:log) { Tempfile.new(['webserver', '.log']) }
+      it 'prints a list of visits per endpoint and a list of unique views per endpoint' do
+        log.write("/contact 184.123.665.067\n/contact 126.318.035.038")
+        log.read
+        log_parser.parse(log)
+        expect { log_parser.print_logs }.to output("/contact 2 visits\n\n/contact 2 unique views\n").to_stdout
+      end
+    end
+  end
 end
