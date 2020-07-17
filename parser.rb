@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require_relative 'lib/log_controller'
 require_relative 'lib/log_parser'
 
-LogParser.new(ARGV[0])
+log = ARGV[0]
+LogController.new(log, LogParser.new(log)).execute
