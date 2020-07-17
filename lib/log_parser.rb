@@ -25,6 +25,12 @@ class LogParser
     logs_sorted_by_unique_views.map { |endpoint, views| puts "#{endpoint} #{views.uniq.count} unique views" }
   end
 
+  def print_logs
+    print_visits
+    puts
+    print_unique_views
+  end
+
   private
 
   attr_reader :log
