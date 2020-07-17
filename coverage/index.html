@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-17T10:17:55+01:00">2020-07-17T10:17:55+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-17T11:03:53+01:00">2020-07-17T11:03:53+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.82
+         1.47
        </span>
     </span> hits/line
     )
@@ -39,7 +39,7 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>8</b> files in total.
   </div>
 
   <div class="t-line-summary">
@@ -84,9 +84,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#4cc5f56dcaa39861ffcdf07e2143b4f080643e95" class="src_link" title="lib/log_controller.rb">lib/log_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -95,11 +95,22 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c28427263a255e80d6aa4b61fb53ff89dfebe75c" class="src_link" title="lib/log_parser.rb">lib/log_parser.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">50</td>
-            <td class="cell--number">29</td>
-            <td class="cell--number">29</td>
+            <td class="cell--number">28</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">17</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">3.38</td>
+            <td class="cell--number">1.94</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#e013fda3f521aeaa6e39af697343c2bccc1ea7aa" class="src_link" title="lib/log_printer.rb">lib/log_printer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">29</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.75</td>
             
           </tr>
         
@@ -117,22 +128,33 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1e4561a80586bf506f9ba5c758cc76482eb4ba28" class="src_link" title="spec/log_controller_spec.rb">spec/log_controller_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">12</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.30</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#dc2f4a0a2bc604c28e651495c9d16ddedb3c6ffa" class="src_link" title="spec/log_parser_spec.rb">spec/log_parser_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">80</td>
-            <td class="cell--number">49</td>
-            <td class="cell--number">49</td>
+            <td class="cell--number">44</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.41</td>
+            <td class="cell--number">1.44</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#00502ac643cdc1ec57cf0e934cb8498eca7e5f2e" class="src_link" title="spec/log_printer_spec.rb">spec/log_printer_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.56</td>
             
           </tr>
         
@@ -319,8 +341,8 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -349,7 +371,7 @@
 
             
 
-            <code class="ruby">  def initialize(log, log_parser)</code>
+            <code class="ruby">  def initialize(log, log_parser, log_printer)</code>
           </li>
         </div>
       
@@ -376,13 +398,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    @log_printer = log_printer</code>
           </li>
         </div>
       
@@ -393,18 +415,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">  def execute</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -415,7 +437,7 @@
 
             
 
-            <code class="ruby">    log_parser.parse(log)</code>
+            <code class="ruby">  def execute</code>
           </li>
         </div>
       
@@ -426,40 +448,40 @@
 
             
 
-            <code class="ruby">    log_parser.print_logs</code>
+            <code class="ruby">    log_parser.parse(log)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    parsed_logs = log_parser.parsed_logs</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    log_printer.print_logs(parsed_logs)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
             
 
             <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  private</code>
           </li>
         </div>
       
@@ -481,12 +503,34 @@
 
             
 
-            <code class="ruby">  attr_reader :log, :log_parser</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attr_reader :log, :log_parser, :log_printer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -515,8 +559,8 @@
     
 
     <div class="t-line-summary">
-      <b>29</b> relevant lines.
-      <span class="green"><b>29</b> lines covered</span> and
+      <b>17</b> relevant lines.
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -594,8 +638,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="7">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="4" data-linenumber="7">
+            <span class="hits">4</span>
             
 
             
@@ -605,8 +649,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="8">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="4" data-linenumber="8">
+            <span class="hits">4</span>
             
 
             
@@ -616,8 +660,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="9">
-            <span class="hits">11</span>
+          <li class="covered" data-hits="4" data-linenumber="9">
+            <span class="hits">4</span>
             
 
             
@@ -660,8 +704,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="13">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
@@ -671,8 +715,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="14">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
             
 
             
@@ -682,8 +726,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="15">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="2" data-linenumber="15">
+            <span class="hits">2</span>
             
 
             
@@ -693,8 +737,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="16">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="2" data-linenumber="16">
+            <span class="hits">2</span>
             
 
             
@@ -743,29 +787,29 @@
 
             
 
-            <code class="ruby">  def print_visits</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="21">
-            <span class="hits">5</span>
+          <li class="never" data-hits="" data-linenumber="21">
+            
             
 
             
 
-            <code class="ruby">    logs_sorted_by_visits.map { |endpoint, visits| puts &quot;#{endpoint} #{visits.count} visits&quot; }</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">  attr_reader :log</code>
           </li>
         </div>
       
@@ -787,7 +831,7 @@
 
             
 
-            <code class="ruby">  def print_unique_views</code>
+            <code class="ruby">  def handle(log)</code>
           </li>
         </div>
       
@@ -798,18 +842,18 @@
 
             
 
-            <code class="ruby">    logs_sorted_by_unique_views.map { |endpoint, views| puts &quot;#{endpoint} #{views.uniq.count} unique views&quot; }</code>
+            <code class="ruby">    raise FileLocationError unless File.exist?(log)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="26">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    raise FileExtensionError unless %w[.log].include? File.extname(log)</code>
           </li>
         </div>
       
@@ -820,34 +864,197 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e013fda3f521aeaa6e39af697343c2bccc1ea7aa">
+  <div class="header">
+    <h3>lib/log_printer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>16</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class LogPrinter</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def print_logs</code>
+            <code class="ruby">  def print_visits(parsed_logs)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
+          <li class="covered" data-hits="4" data-linenumber="4">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    logs_sorted_by_visits(parsed_logs).map { |endpoint, visits| puts &quot;#{endpoint} #{visits.count} visits&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    print_visits</code>
+            <code class="ruby">  def print_unique_views(parsed_logs)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="30">
+          <li class="covered" data-hits="4" data-linenumber="8">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    logs_sorted_by_unique_views(parsed_logs).map { |endpoint, views| puts &quot;#{endpoint} #{views.uniq.count} unique views&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def print_logs(parsed_logs)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @parsed_logs = parsed_logs</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    print_visits(parsed_logs)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
             <span class="hits">1</span>
             
 
@@ -858,18 +1065,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="31">
+          <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    print_unique_views</code>
+            <code class="ruby">    print_unique_views(parsed_logs)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -880,7 +1087,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -891,7 +1098,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
+          <li class="covered" data-hits="1" data-linenumber="18">
             <span class="hits">1</span>
             
 
@@ -902,7 +1109,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -913,18 +1120,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="36">
+          <li class="covered" data-hits="1" data-linenumber="20">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  attr_reader :log</code>
+            <code class="ruby">  attr_reader :parsed_logs</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
@@ -935,74 +1142,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
+          <li class="covered" data-hits="1" data-linenumber="22">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def handle(log)</code>
+            <code class="ruby">  def logs_sorted_by_visits(parsed_logs)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="39">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">    raise FileLocationError unless File.exist?(log)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="40">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">    raise FileExtensionError unless %w[.log].include? File.extname(log)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def logs_sorted_by_visits</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="5" data-linenumber="44">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="4" data-linenumber="23">
+            <span class="hits">4</span>
             
 
             
@@ -1012,7 +1164,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -1023,7 +1175,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -1034,18 +1186,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
+          <li class="covered" data-hits="1" data-linenumber="26">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def logs_sorted_by_unique_views</code>
+            <code class="ruby">  def logs_sorted_by_unique_views(parsed_logs)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="48">
+          <li class="covered" data-hits="4" data-linenumber="27">
             <span class="hits">4</span>
             
 
@@ -1056,7 +1208,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
+          <li class="never" data-hits="" data-linenumber="28">
             
             
 
@@ -1067,7 +1219,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -1358,8 +1510,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>12</b> relevant lines.
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1410,7 +1562,7 @@
 
             
 
-            <code class="ruby">  subject(:log_controller) { described_class.new(log, log_parser) }</code>
+            <code class="ruby">  subject(:log_controller) { described_class.new(log, log_parser, log_printer) }</code>
           </li>
         </div>
       
@@ -1432,18 +1584,18 @@
 
             
 
-            <code class="ruby">  let(:log) { double :log }</code>
+            <code class="ruby">  let(:log_printer) { spy :log_printer }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  let(:log) { double :log }</code>
           </li>
         </div>
       
@@ -1454,18 +1606,18 @@
 
             
 
-            <code class="ruby">  describe &#39;#execute&#39; do</code>
+            <code class="ruby">  let(:parsed_logs) { double :parsed_logs }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="9">
+            
             
 
             
 
-            <code class="ruby">    it &#39;parses and prints logs&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1476,7 +1628,7 @@
 
             
 
-            <code class="ruby">      log_controller.execute</code>
+            <code class="ruby">  describe &#39;#execute&#39; do</code>
           </li>
         </div>
       
@@ -1487,7 +1639,7 @@
 
             
 
-            <code class="ruby">      expect(log_parser).to have_received(:parse).with(log)</code>
+            <code class="ruby">    it &#39;parses and prints logs&#39; do</code>
           </li>
         </div>
       
@@ -1498,12 +1650,34 @@
 
             
 
-            <code class="ruby">      expect(log_parser).to have_received :print_logs</code>
+            <code class="ruby">      log_controller.execute</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(log_parser).to have_received :parse</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(log_printer).to have_received :print_logs</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -1514,7 +1688,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -1525,7 +1699,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -1554,8 +1728,8 @@
     
 
     <div class="t-line-summary">
-      <b>49</b> relevant lines.
-      <span class="green"><b>49</b> lines covered</span> and
+      <b>25</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1611,8 +1785,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="5">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="5" data-linenumber="5">
+            <span class="hits">5</span>
             
 
             
@@ -2046,12 +2220,109 @@
 
             
 
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="00502ac643cdc1ec57cf0e934cb8498eca7e5f2e">
+  <div class="header">
+    <h3>spec/log_printer_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>16</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;log_printer&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe LogPrinter do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="4">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">  subject(:log_printer) { described_class.new() }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="5">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">  let(:parsed_logs) { {&#39;/contact&#39; =&gt; [&quot;126.318.035.038&quot;, &quot;184.123.665.067&quot;]} }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
@@ -2062,7 +2333,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
+          <li class="covered" data-hits="1" data-linenumber="8">
             <span class="hits">1</span>
             
 
@@ -2073,18 +2344,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="47">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">      let(:log) { Tempfile.new([&#39;webserver&#39;, &#39;.log&#39;]) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="48">
+          <li class="covered" data-hits="1" data-linenumber="9">
             <span class="hits">1</span>
             
 
@@ -2095,51 +2355,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log.write(&quot;/help_page/1 126.318.035.038\n/contact 184.123.665.067\n/contact 126.318.035.038&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log.read</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log_parser.parse(log)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="52">
+          <li class="covered" data-hits="2" data-linenumber="10">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">        expect { log_parser.print_visits }.to output(&quot;/contact 2 visits\n/help_page/1 1 visits\n&quot;).to_stdout</code>
+            <code class="ruby">        expect { log_printer.print_visits(parsed_logs) }.to output(&quot;/contact 2 visits\n&quot;).to_stdout</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -2150,7 +2377,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -2161,7 +2388,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="55">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -2172,7 +2399,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -2183,7 +2410,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
+          <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
@@ -2194,7 +2421,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="58">
+          <li class="covered" data-hits="1" data-linenumber="16">
             <span class="hits">1</span>
             
 
@@ -2205,18 +2432,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="59">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">      let(:log) { Tempfile.new([&#39;webserver&#39;, &#39;.log&#39;]) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
+          <li class="covered" data-hits="1" data-linenumber="17">
             <span class="hits">1</span>
             
 
@@ -2227,51 +2443,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log.write(&quot;/contact 184.123.665.067\n/contact 126.318.035.038&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log.read</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log_parser.parse(log)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="64">
+          <li class="covered" data-hits="2" data-linenumber="18">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">        expect { log_parser.print_unique_views }.to output(&quot;/contact 2 unique views\n&quot;).to_stdout</code>
+            <code class="ruby">        expect { log_printer.print_unique_views(parsed_logs) }.to output(&quot;/contact 2 unique views\n&quot;).to_stdout</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -2282,7 +2465,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -2293,7 +2476,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
@@ -2304,7 +2487,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="68">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -2315,7 +2498,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="69">
+          <li class="covered" data-hits="1" data-linenumber="23">
             <span class="hits">1</span>
             
 
@@ -2326,7 +2509,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="70">
+          <li class="covered" data-hits="1" data-linenumber="24">
             <span class="hits">1</span>
             
 
@@ -2337,18 +2520,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="71">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">      let(:log) { Tempfile.new([&#39;webserver&#39;, &#39;.log&#39;]) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
+          <li class="covered" data-hits="1" data-linenumber="25">
             <span class="hits">1</span>
             
 
@@ -2359,51 +2531,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="73">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log.write(&quot;/contact 184.123.665.067\n/contact 126.318.035.038&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="74">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log.read</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        log_parser.parse(log)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="76">
+          <li class="covered" data-hits="2" data-linenumber="26">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">        expect { log_parser.print_logs }.to output(&quot;/contact 2 visits\n\n/contact 2 unique views\n&quot;).to_stdout</code>
+            <code class="ruby">        expect { log_printer.print_logs(parsed_logs) }.to output(&quot;/contact 2 visits\n\n/contact 2 unique views\n&quot;).to_stdout</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="27">
             
             
 
@@ -2414,7 +2553,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
+          <li class="never" data-hits="" data-linenumber="28">
             
             
 
@@ -2425,7 +2564,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="79">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -2436,7 +2575,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="80">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
