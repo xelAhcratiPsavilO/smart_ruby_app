@@ -1,4 +1,5 @@
 require 'log_parser'
+require 'tempfile'
 
 describe LogParser do
   subject(:log_parser) { described_class.new(log) }
