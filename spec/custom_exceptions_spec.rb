@@ -9,3 +9,13 @@ describe FileExtensionError do
     end
   end
 end
+
+describe FileLocationError do
+  subject(:file_location_error) { described_class.new }
+
+  describe '#message' do
+    it 'displays a customize error message' do
+      expect(file_location_error.message).to eq 'File does not exist in given path'
+    end
+  end
+end
